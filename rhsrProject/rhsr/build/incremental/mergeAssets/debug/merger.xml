@@ -2,10 +2,10 @@
 <merger>
 
     <dataSet config="main" >
-        <source path="/home/ryan/Dropbox/rhsr/rhsr-andriod/rhsrProject/rhsr/src/main/assets" />
+        <source path="/home/ryan/Dropbox/rhsr/rhsr-githubbed/rhsrProject/rhsr/src/main/assets" />
     </dataSet>
     <dataSet config="debug" >
-        <source path="/home/ryan/Dropbox/rhsr/rhsr-andriod/rhsrProject/rhsr/src/debug/assets" />
+        <source path="/home/ryan/Dropbox/rhsr/rhsr-githubbed/rhsrProject/rhsr/src/debug/assets" />
     </dataSet>
 
 </merger>

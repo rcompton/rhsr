@@ -2,34 +2,34 @@
 <merger>
 
     <dataSet config="main" >
-        <source path="/home/ryan/Dropbox/rhsr/rhsr-andriod/rhsrProject/rhsr/src/main/res" >
+        <source path="/home/ryan/Dropbox/rhsr/rhsr-githubbed/rhsrProject/rhsr/src/main/res" >
             <file
                 name="activity_main"
-                path="/home/ryan/Dropbox/rhsr/rhsr-andriod/rhsrProject/rhsr/src/main/res/layout/activity_main.xml"
+                path="/home/ryan/Dropbox/rhsr/rhsr-githubbed/rhsrProject/rhsr/src/main/res/layout/activity_main.xml"
                 qualifiers=""
                 type="layout" />
             <file
                 name="activity_tweet"
-                path="/home/ryan/Dropbox/rhsr/rhsr-andriod/rhsrProject/rhsr/src/main/res/layout/activity_tweet.xml"
+                path="/home/ryan/Dropbox/rhsr/rhsr-githubbed/rhsrProject/rhsr/src/main/res/layout/activity_tweet.xml"
                 qualifiers=""
                 type="layout" />
             <file
                 name="photo_report_button_activity"
-                path="/home/ryan/Dropbox/rhsr/rhsr-andriod/rhsrProject/rhsr/src/main/res/layout/photo_report_button_activity.xml"
+                path="/home/ryan/Dropbox/rhsr/rhsr-githubbed/rhsrProject/rhsr/src/main/res/layout/photo_report_button_activity.xml"
                 qualifiers=""
                 type="layout" />
             <file
                 name="take_and_save_photo_activity"
-                path="/home/ryan/Dropbox/rhsr/rhsr-andriod/rhsrProject/rhsr/src/main/res/layout/take_and_save_photo_activity.xml"
+                path="/home/ryan/Dropbox/rhsr/rhsr-githubbed/rhsrProject/rhsr/src/main/res/layout/take_and_save_photo_activity.xml"
                 qualifiers=""
                 type="layout" />
             <file
                 name="activity_twitter_oauth"
-                path="/home/ryan/Dropbox/rhsr/rhsr-andriod/rhsrProject/rhsr/src/main/res/layout/activity_twitter_oauth.xml"
+                path="/home/ryan/Dropbox/rhsr/rhsr-githubbed/rhsrProject/rhsr/src/main/res/layout/activity_twitter_oauth.xml"
                 qualifiers=""
                 type="layout" />
             <file
-                path="/home/ryan/Dropbox/rhsr/rhsr-andriod/rhsrProject/rhsr/src/main/res/values/styles.xml"
+                path="/home/ryan/Dropbox/rhsr/rhsr-githubbed/rhsrProject/rhsr/src/main/res/values/styles.xml"
                 qualifiers="" >
 
                 <style
@@ -51,7 +51,7 @@
                 </style>
             </file>
             <file
-                path="/home/ryan/Dropbox/rhsr/rhsr-andriod/rhsrProject/rhsr/src/main/res/values/dimens.xml"
+                path="/home/ryan/Dropbox/rhsr/rhsr-githubbed/rhsrProject/rhsr/src/main/res/values/dimens.xml"
                 qualifiers="" >
                 <dimen name="activity_horizontal_margin" >16dp
                 </dimen>
@@ -59,7 +59,7 @@
                 </dimen>
             </file>
             <file
-                path="/home/ryan/Dropbox/rhsr/rhsr-andriod/rhsrProject/rhsr/src/main/res/values/strings.xml"
+                path="/home/ryan/Dropbox/rhsr/rhsr-githubbed/rhsrProject/rhsr/src/main/res/values/strings.xml"
                 qualifiers="" >
                 <string name="final_report" >Your report
                 </string>
@@ -87,115 +87,115 @@
                 </string>
                 <string name="hello_world" >Hello world!
                 </string>
-                <string name="album_name" >rhsrPhotos
-                </string>
                 <string name="title_activity_take_and_save_photo" >TakeAndSavePhotoActivity
+                </string>
+                <string name="album_name" >rhsrPhotos
                 </string>
                 <string name="title_activity_twitter_auth" >TwitterAuthActivity
                 </string>
             </file>
             <file
                 name="main"
-                path="/home/ryan/Dropbox/rhsr/rhsr-andriod/rhsrProject/rhsr/src/main/res/menu/main.xml"
+                path="/home/ryan/Dropbox/rhsr/rhsr-githubbed/rhsrProject/rhsr/src/main/res/menu/main.xml"
                 qualifiers=""
                 type="menu" />
             <file
                 name="photo_report_button"
-                path="/home/ryan/Dropbox/rhsr/rhsr-andriod/rhsrProject/rhsr/src/main/res/menu/photo_report_button.xml"
+                path="/home/ryan/Dropbox/rhsr/rhsr-githubbed/rhsrProject/rhsr/src/main/res/menu/photo_report_button.xml"
                 qualifiers=""
                 type="menu" />
             <file
                 name="tweet_to_twitter"
-                path="/home/ryan/Dropbox/rhsr/rhsr-andriod/rhsrProject/rhsr/src/main/res/menu/tweet_to_twitter.xml"
+                path="/home/ryan/Dropbox/rhsr/rhsr-githubbed/rhsrProject/rhsr/src/main/res/menu/tweet_to_twitter.xml"
                 qualifiers=""
                 type="menu" />
             <file
                 name="take_and_save_photo"
-                path="/home/ryan/Dropbox/rhsr/rhsr-andriod/rhsrProject/rhsr/src/main/res/menu/take_and_save_photo.xml"
+                path="/home/ryan/Dropbox/rhsr/rhsr-githubbed/rhsrProject/rhsr/src/main/res/menu/take_and_save_photo.xml"
                 qualifiers=""
                 type="menu" />
             <file
                 name="twitter_oauth"
-                path="/home/ryan/Dropbox/rhsr/rhsr-andriod/rhsrProject/rhsr/src/main/res/menu/twitter_oauth.xml"
+                path="/home/ryan/Dropbox/rhsr/rhsr-githubbed/rhsrProject/rhsr/src/main/res/menu/twitter_oauth.xml"
                 qualifiers=""
                 type="menu" />
             <file
                 name="tweet"
-                path="/home/ryan/Dropbox/rhsr/rhsr-andriod/rhsrProject/rhsr/src/main/res/menu/tweet.xml"
+                path="/home/ryan/Dropbox/rhsr/rhsr-githubbed/rhsrProject/rhsr/src/main/res/menu/tweet.xml"
                 qualifiers=""
                 type="menu" />
             <file
                 name="twitter_auth"
-                path="/home/ryan/Dropbox/rhsr/rhsr-andriod/rhsrProject/rhsr/src/main/res/menu/twitter_auth.xml"
+                path="/home/ryan/Dropbox/rhsr/rhsr-githubbed/rhsrProject/rhsr/src/main/res/menu/twitter_auth.xml"
                 qualifiers=""
                 type="menu" />
             <file
                 name="ic_launcher"
-                path="/home/ryan/Dropbox/rhsr/rhsr-andriod/rhsrProject/rhsr/src/main/res/drawable-xhdpi/ic_launcher.png"
+                path="/home/ryan/Dropbox/rhsr/rhsr-githubbed/rhsrProject/rhsr/src/main/res/drawable-xhdpi/ic_launcher.png"
                 qualifiers="xhdpi"
                 type="drawable" />
             <file
                 name="ic_launcher"
-                path="/home/ryan/Dropbox/rhsr/rhsr-andriod/rhsrProject/rhsr/src/main/res/drawable-xxhdpi/ic_launcher.png"
+                path="/home/ryan/Dropbox/rhsr/rhsr-githubbed/rhsrProject/rhsr/src/main/res/drawable-xxhdpi/ic_launcher.png"
                 qualifiers="xxhdpi"
                 type="drawable" />
             <file
                 name="f"
-                path="/home/ryan/Dropbox/rhsr/rhsr-andriod/rhsrProject/rhsr/src/main/res/drawable-hdpi/f.png"
+                path="/home/ryan/Dropbox/rhsr/rhsr-githubbed/rhsrProject/rhsr/src/main/res/drawable-hdpi/f.png"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
                 name="surfa4"
-                path="/home/ryan/Dropbox/rhsr/rhsr-andriod/rhsrProject/rhsr/src/main/res/drawable-hdpi/surfa4.jpg"
+                path="/home/ryan/Dropbox/rhsr/rhsr-githubbed/rhsrProject/rhsr/src/main/res/drawable-hdpi/surfa4.jpg"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
                 name="curvebox"
-                path="/home/ryan/Dropbox/rhsr/rhsr-andriod/rhsrProject/rhsr/src/main/res/drawable-hdpi/curvebox.xml"
+                path="/home/ryan/Dropbox/rhsr/rhsr-githubbed/rhsrProject/rhsr/src/main/res/drawable-hdpi/curvebox.xml"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
                 name="icon"
-                path="/home/ryan/Dropbox/rhsr/rhsr-andriod/rhsrProject/rhsr/src/main/res/drawable-hdpi/icon.jpg"
+                path="/home/ryan/Dropbox/rhsr/rhsr-githubbed/rhsrProject/rhsr/src/main/res/drawable-hdpi/icon.jpg"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
                 name="surfgirl"
-                path="/home/ryan/Dropbox/rhsr/rhsr-andriod/rhsrProject/rhsr/src/main/res/drawable-hdpi/surfgirl.jpg"
+                path="/home/ryan/Dropbox/rhsr/rhsr-githubbed/rhsrProject/rhsr/src/main/res/drawable-hdpi/surfgirl.jpg"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
                 name="ic_launcher"
-                path="/home/ryan/Dropbox/rhsr/rhsr-andriod/rhsrProject/rhsr/src/main/res/drawable-hdpi/ic_launcher.png"
+                path="/home/ryan/Dropbox/rhsr/rhsr-githubbed/rhsrProject/rhsr/src/main/res/drawable-hdpi/ic_launcher.png"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
                 name="blackcurvebox"
-                path="/home/ryan/Dropbox/rhsr/rhsr-andriod/rhsrProject/rhsr/src/main/res/drawable-hdpi/blackcurvebox.xml"
+                path="/home/ryan/Dropbox/rhsr/rhsr-githubbed/rhsrProject/rhsr/src/main/res/drawable-hdpi/blackcurvebox.xml"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
                 name="surn12"
-                path="/home/ryan/Dropbox/rhsr/rhsr-andriod/rhsrProject/rhsr/src/main/res/drawable-hdpi/surn12.jpg"
+                path="/home/ryan/Dropbox/rhsr/rhsr-githubbed/rhsrProject/rhsr/src/main/res/drawable-hdpi/surn12.jpg"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
                 name="s13"
-                path="/home/ryan/Dropbox/rhsr/rhsr-andriod/rhsrProject/rhsr/src/main/res/drawable-hdpi/s13.jpg"
+                path="/home/ryan/Dropbox/rhsr/rhsr-githubbed/rhsrProject/rhsr/src/main/res/drawable-hdpi/s13.jpg"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
                 name="s32"
-                path="/home/ryan/Dropbox/rhsr/rhsr-andriod/rhsrProject/rhsr/src/main/res/drawable-hdpi/s32.jpg"
+                path="/home/ryan/Dropbox/rhsr/rhsr-githubbed/rhsrProject/rhsr/src/main/res/drawable-hdpi/s32.jpg"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
                 name="tbird"
-                path="/home/ryan/Dropbox/rhsr/rhsr-andriod/rhsrProject/rhsr/src/main/res/drawable-hdpi/tbird.png"
+                path="/home/ryan/Dropbox/rhsr/rhsr-githubbed/rhsrProject/rhsr/src/main/res/drawable-hdpi/tbird.png"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
-                path="/home/ryan/Dropbox/rhsr/rhsr-andriod/rhsrProject/rhsr/src/main/res/values-v11/styles.xml"
+                path="/home/ryan/Dropbox/rhsr/rhsr-githubbed/rhsrProject/rhsr/src/main/res/values-v11/styles.xml"
                 qualifiers="v11" >
 
                 <style
@@ -206,21 +206,21 @@
                 </style>
             </file>
             <file
-                path="/home/ryan/Dropbox/rhsr/rhsr-andriod/rhsrProject/rhsr/src/main/res/values-sw720dp-land/dimens.xml"
+                path="/home/ryan/Dropbox/rhsr/rhsr-githubbed/rhsrProject/rhsr/src/main/res/values-sw720dp-land/dimens.xml"
                 qualifiers="sw720dp-land" >
                 <dimen name="activity_horizontal_margin" >128dp
                 </dimen>
             </file>
             <file
                 name="ic_launcher"
-                path="/home/ryan/Dropbox/rhsr/rhsr-andriod/rhsrProject/rhsr/src/main/res/drawable-mdpi/ic_launcher.png"
+                path="/home/ryan/Dropbox/rhsr/rhsr-githubbed/rhsrProject/rhsr/src/main/res/drawable-mdpi/ic_launcher.png"
                 qualifiers="mdpi"
                 type="drawable" />
         </source>
-        <source path="/home/ryan/Dropbox/rhsr/rhsr-andriod/rhsrProject/rhsr/build/res/rs/debug" />
+        <source path="/home/ryan/Dropbox/rhsr/rhsr-githubbed/rhsrProject/rhsr/build/res/rs/debug" />
     </dataSet>
     <dataSet config="debug" >
-        <source path="/home/ryan/Dropbox/rhsr/rhsr-andriod/rhsrProject/rhsr/src/debug/res" />
+        <source path="/home/ryan/Dropbox/rhsr/rhsr-githubbed/rhsrProject/rhsr/src/debug/res" />
     </dataSet>
 
 </merger>
