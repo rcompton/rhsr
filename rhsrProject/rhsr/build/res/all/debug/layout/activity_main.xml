@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
+    >
+    <!--android:background="@drawable/surfgirl"-->
+
+
+    <Button
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Photo"
+        android:onClick="photoReportButton"
+        android:id="@+id/photo_button"
+        android:background="@drawable/curvebox"
+        android:textColor="#000000"
+        android:alpha=".85"
+        android:layout_alignTop="@+id/buttonMainTweet"
+        android:layout_toLeftOf="@+id/buttonMainTweet"
+        android:layout_marginRight="11dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Post"
+        android:background="@drawable/curvebox"
+        android:textColor="#000000"
+        android:alpha=".85"
+        android:onClick="tweetButton"
+        android:id="@+id/buttonMainTweet"
+        android:layout_marginTop="11dp"
+        android:layout_below="@+id/editText0"
+        android:layout_alignRight="@+id/editText0" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:textColor="#000000"
+        android:background="@drawable/curvebox"
+        android:alpha=".85"
+        android:id="@+id/editText0"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/foundSpotDefault"
+        android:background="@drawable/blackcurvebox"
+        android:alpha=".8"
+        android:maxLines = "6"
+        android:scrollbars = "vertical"
+        android:id="@+id/foundSpot"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/photo_button"
+        android:layout_alignRight="@+id/buttonMainTweet"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buoyDefault"
+        android:background="@drawable/blackcurvebox"
+        android:alpha=".8"
+        android:maxLines="6"
+        android:scrollbars="vertical"
+        android:id="@+id/buoyDisplay"
+        android:layout_below="@+id/foundSpot"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="11dp"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dataTextMain"
+        android:background="#ff000000"
+        android:ems="10"
+        android:text="Art: Ron Croci\nData: OpenSurfAtlas, NOAA, wunderground API"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/ronTextMain" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ronTextMain"
+        android:background="#ff000000"
+        android:ems="10"
+        android:text="Art: Ron Croci\nData: OpenSurfAtlas, NOAA, wunderground API"
+        android:layout_above="@+id/dataTextMain"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="11dp" />
+
+    <Button
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Download surf info"
+        android:onClick="downloadButton"
+        android:id="@+id/downloadbutton"
+        android:background="@drawable/curvebox"
+        android:textColor="#000000"
+        android:alpha=".85"
+        android:layout_alignTop="@+id/photo_button"
+        android:layout_alignParentLeft="true" />
+
+
+</RelativeLayout>
+
+
+<!-- From: file:/home/ryan/Dropbox/rhsr/rhsr-andriod/rhsrProject/rhsr/src/main/res/layout/activity_main.xml -->

@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--<item android:id="@+id/action_settings"-->
+    <!--android:title="@string/action_settings"-->
+    <!--android:orderInCategory="100"-->
+    <!--android:showAsAction="never" />-->
+
+    <item android:id="@+id/logout_button"
+        android:title="Logout from Twitter"
+        android:showAsAction="never"
+        android:onClick="clearSharedPrefs"
+    />
+
+
+
+</menu>
+<!-- From: file:/home/ryan/Dropbox/rhsr/rhsr-andriod/rhsrProject/rhsr/src/main/res/menu/main.xml -->

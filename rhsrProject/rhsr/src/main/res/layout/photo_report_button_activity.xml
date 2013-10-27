@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".PhotoReportButtonActivity"
+    android:label="Rush Hour Surf Report"
+    >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="your report"
+        android:id="@+id/textViewPhotoActivity"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true" />
+
+    <!--display users photo-->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageViewPhotoActivity"
+        android:layout_below="@+id/textViewPhotoActivity"
+        android:layout_alignLeft="@+id/textViewPhotoActivity"
+        android:layout_marginTop="25dp"
+        android:scaleType="centerInside"
+        android:layout_alignParentRight="true"
+        android:src="@android:drawable/ic_menu_share" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login to Twitter"
+        android:id="@+id/twitterLoginButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/imageViewPhotoActivity" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/twitterUpdateButton"
+        android:layout_alignBottom="@+id/twitterLoginButton"
+        android:layout_alignRight="@+id/imageViewPhotoActivity"
+        android:src="@drawable/tbird"
+        android:visibility="gone"/>
+
+
+</RelativeLayout>

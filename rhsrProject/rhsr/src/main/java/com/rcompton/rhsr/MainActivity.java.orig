@@ -1,0 +1,112 @@
+package com.rcompton.rhsr;
+
+import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
+import android.os.Bundle;
+import android.app.Activity;
+import android.os.Environment;
+import android.provider.MediaStore;
+import android.util.Log;
+import android.view.Gravity;
+import android.view.Menu;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.Toast;
+
+import org.joda.time.DateTime;
+
+import java.io.File;
+import java.util.UUID;
+
+public class MainActivity extends Activity {
+
+    private final static String PBUTTON_LOG_TAG="rhsrPhotoButton";
+    private final static int PHOTO_REQ_CODE = 123456;
+
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.main, menu);
+        return true;
+    }
+
+    //start camera
+    private Uri imageUri;
+    public void capturePhoto() {
+
+        Intent cameraIntent = new Intent("android.media.action.IMAGE_CAPTURE");
+        setResult(Activity.RESULT_OK, cameraIntent);
+
+        String photoFName = "rhsrPhoto" + (new DateTime()).toString() + ".png";
+        File photoFile = new File(Environment.getExternalStorageDirectory(),
+                                    photoFName);
+        cameraIntent.putExtra(MediaStore.EXTRA_OUTPUT,
+                Uri.fromFile(photoFile));
+        imageUri = Uri.fromFile(photoFile);
+        startActivityForResult(cameraIntent, PHOTO_REQ_CODE);
+
+    }
+
+    /** Called when the user clicks the Photo Report button */
+    public final static String SUBMITTED_REPORT_MESSAGE = "com.rcompton.rhsr.SUBMITTED_REPORT_MESSAGE";
+   // private final static int TAKE_PHOTO_CODE = 123456;
+    public void photoReportButton(View view) {
+
+        //take a photo
+        Log.i(PBUTTON_LOG_TAG, "about to photo");
+        capturePhoto();
+        Log.i(PBUTTON_LOG_TAG, "capturePhoto() over");
+
+        //for some reason you can't put stuff in here,
+        //it will execute as soon as photoReportButton() is called,
+        //not after capturePhoto()...
+
+
+        //     Intent intent = new Intent(this, PhotoReportButtonActivity.class);
+   //     EditText editText = (EditText) findViewById(R.id.submitted_report);
+   //     String submittedReport = editText.getText().toString();
+   //     intent.putExtra(SUBMITTED_REPORT_MESSAGE, submittedReport);
+   //     startActivity(intent);
+
+    }
+
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        switch (requestCode) {
+            case PHOTO_REQ_CODE:
+                if (resultCode == Activity.RESULT_OK) {
+                    Log.i(PBUTTON_LOG_TAG,"photo win..");
+                    Toast.makeText(getApplicationContext(),imageUri.toString(),Toast.LENGTH_LONG);
+                    //boolean tweetSuccess = sendTweetToRyansAccount(tweetText,selectedImageUri);
+                    //if(tweetSuccess){
+                    //    Log.i(PBUTTON_LOG_TAG, "tweet with photo success!!!!!!!");
+                    //}
+
+//                    Context context = getApplicationContext();
+//                    String text = "Hello toast!";
+//                    Toast toast = Toast.makeText(getApplicationContext(),text,Toast.LENGTH_LONG);
+//                    //toast.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
+//                    //toast.setDuration(Toast.LENGTH_LONG);
+//                    //toast.setView(layout);
+//                    toast.show();
+
+
+                }else{
+                    Log.i(PBUTTON_LOG_TAG,"photo fail?."+resultCode);
+                    //imageUsuccessfulImageUrri = Uri.parse("photofail");
+                }
+        }
+    }
+
+}
