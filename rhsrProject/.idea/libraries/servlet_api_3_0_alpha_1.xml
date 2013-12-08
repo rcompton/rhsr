@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="servlet-api-3.0-alpha-1">
-    <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/artifacts-24/filestore/javax.servlet/servlet-api/3.0-alpha-1/jar/7b491267924e8c81f4f9378caba0ee03423948ca/servlet-api-3.0-alpha-1.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
