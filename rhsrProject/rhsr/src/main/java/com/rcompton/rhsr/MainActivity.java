@@ -313,13 +313,15 @@ public class MainActivity extends Activity {
                         "wind: "+rhsr.getWindInfo().split("Gust")[0].replace("From the","") + "\n" +
                         "tide: "+rhsr.getTideInfo() + "\n" +
                         "water temp: "+rhsr.getClosestBuoyTemp();
-                tweetDefault = tweetDefault+" "+tweetDefault.length();
+                tweetDefault = tweetDefault+" "+tweetDefault.length() +"\n"+
+                        " #rhsr";
             }else{
                 tweetDefault = rhsr.getClosestSpotsAndDistances().get(0).split("\t")[0] + "\n"+
                         "swell: "+rhsr.getSwellInfo() + "\n" +
                         "wind: "+rhsr.getWindInfo().split("Gust")[0].replace("From the","") + "\n" +
                         "tide: "+rhsr.getTideInfo() + "\n" +
-                        "water temp: "+rhsr.getClosestBuoyTemp();
+                        "water temp: "+rhsr.getClosestBuoyTemp() +"\n"+
+                " #rhsr";
             }
 
             //closest known spots and descriptions appear below

@@ -18,4 +18,6 @@ public class RHSRQuery {
         InputStream urlStream = surfInfoUrl.openStream();
         return IOUtils.toString(urlStream, "UTF-8");
     }
+
+
 }

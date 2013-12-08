@@ -60,34 +60,20 @@
   </component>
   <component name="AndroidLogFilters">
     <option name="TOOL_WINDOW_CUSTOM_FILTER" value="rhsr" />
-    <option name="TOOL_WINDOW_LOG_LEVEL" value="ERROR" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc070e66-b7cc-40f7-8b63-d98ddaace46c" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rhsr/src/main/java/com/rcompton/rhsr/backend/Location.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rhsr/src/main/java/com/rcompton/rhsr/backend/SubmittedReport.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rhsr/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/rhsr/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rhsr/build/res/all/debug/layout/activity_main.xml" afterPath="$PROJECT_DIR$/rhsr/build/res/all/debug/layout/activity_main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rhsr/build/res/all/debug/layout/activity_tweet.xml" afterPath="$PROJECT_DIR$/rhsr/build/res/all/debug/layout/activity_tweet.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rhsr/build/res/all/debug/layout/activity_twitter_oauth.xml" afterPath="$PROJECT_DIR$/rhsr/build/res/all/debug/layout/activity_twitter_oauth.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rhsr/build/res/all/debug/drawable-hdpi/blackcurvebox.xml" afterPath="$PROJECT_DIR$/rhsr/build/res/all/debug/drawable-hdpi/blackcurvebox.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/commons_io_1_3_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/commons_io_1_3_2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/commons_lang_2_6.xml" afterPath="$PROJECT_DIR$/.idea/libraries/commons_lang_2_6.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rhsr/build/res/all/debug/drawable-hdpi/curvebox.xml" afterPath="$PROJECT_DIR$/rhsr/build/res/all/debug/drawable-hdpi/curvebox.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rhsr/src/main/java/com/rcompton/rhsr/MainActivity.java" afterPath="$PROJECT_DIR$/rhsr/src/main/java/com/rcompton/rhsr/MainActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rhsr/build/source/r/debug/com/rcompton/rhsr/R.java" afterPath="$PROJECT_DIR$/rhsr/build/source/r/debug/com/rcompton/rhsr/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rhsr/src/main/java/com/rcompton/rhsr/backend/RHSRQuery.java" afterPath="$PROJECT_DIR$/rhsr/src/main/java/com/rcompton/rhsr/backend/RHSRQuery.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rhsr/src/main/java/com/rcompton/rhsr/TweetActivity.java" afterPath="$PROJECT_DIR$/rhsr/src/main/java/com/rcompton/rhsr/TweetActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rhsr/build.gradle" afterPath="$PROJECT_DIR$/rhsr/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rhsr/build/res/all/debug/menu/main.xml" afterPath="$PROJECT_DIR$/rhsr/build/res/all/debug/menu/main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rhsr/build/res/all/debug/menu/photo_report_button.xml" afterPath="$PROJECT_DIR$/rhsr/build/res/all/debug/menu/photo_report_button.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rhsr/build/res/all/debug/layout/photo_report_button_activity.xml" afterPath="$PROJECT_DIR$/rhsr/build/res/all/debug/layout/photo_report_button_activity.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rhsr/build/res/all/debug/menu/take_and_save_photo.xml" afterPath="$PROJECT_DIR$/rhsr/build/res/all/debug/menu/take_and_save_photo.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rhsr/build/res/all/debug/layout/take_and_save_photo_activity.xml" afterPath="$PROJECT_DIR$/rhsr/build/res/all/debug/layout/take_and_save_photo_activity.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rhsr/build/res/all/debug/menu/tweet.xml" afterPath="$PROJECT_DIR$/rhsr/build/res/all/debug/menu/tweet.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rhsr/build/res/all/debug/menu/tweet_to_twitter.xml" afterPath="$PROJECT_DIR$/rhsr/build/res/all/debug/menu/tweet_to_twitter.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/twitter4j_core_3_0_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/twitter4j_core_3_0_3.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rhsr/build/res/all/debug/menu/twitter_auth.xml" afterPath="$PROJECT_DIR$/rhsr/build/res/all/debug/menu/twitter_auth.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rhsr/build/res/all/debug/menu/twitter_oauth.xml" afterPath="$PROJECT_DIR$/rhsr/build/res/all/debug/menu/twitter_oauth.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rhsr/build/res/all/debug/values/values.xml" afterPath="$PROJECT_DIR$/rhsr/build/res/all/debug/values/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rhsr/build/res/all/debug/values-sw720dp-land/values.xml" afterPath="$PROJECT_DIR$/rhsr/build/res/all/debug/values-sw720dp-land/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rhsr/build/res/all/debug/values-v11/values.xml" afterPath="$PROJECT_DIR$/rhsr/build/res/all/debug/values-v11/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="rhsr.iws" />
@@ -157,28 +143,30 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rhsr/src/main/java/com/rcompton/rhsr/MainActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="341" column="0" selection-start="12223" selection-end="12223" vertical-scroll-proportion="0.0" vertical-offset="5613" max-vertical-offset="8460">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/rhsr/src/main/AndroidManifest.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="28" selection-start="196" selection-end="196" vertical-scroll-proportion="-0.815331" vertical-offset="540" max-vertical-offset="1584">
+              <folding>
+                <element signature="e#1167#1185#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="TweetActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rhsr/src/main/java/com/rcompton/rhsr/TweetActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="177" column="14" selection-start="6332" selection-end="6332" vertical-scroll-proportion="0.0" vertical-offset="3186" max-vertical-offset="9756">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activity_tweet.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rhsr/src/main/res/layout/activity_tweet.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="31" selection-start="1892" selection-end="1892" vertical-scroll-proportion="0.0" vertical-offset="900" max-vertical-offset="1926">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activity_main.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rhsr/src/main/res/layout/activity_main.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="107" column="39" selection-start="4065" selection-end="4065" vertical-scroll-proportion="0.0" vertical-offset="1678" max-vertical-offset="2250">
+            <state line="225" column="60" selection-start="8709" selection-end="8709" vertical-scroll-proportion="0.0" vertical-offset="3096" max-vertical-offset="4122">
               <folding />
             </state>
           </provider>
@@ -187,52 +175,7 @@
       <file leaf-file-name="build.gradle" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rhsr/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="0" selection-start="448" selection-end="448" vertical-scroll-proportion="0.0" vertical-offset="396" max-vertical-offset="720">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="strings.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rhsr/src/main/res/values/strings.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="34" selection-start="740" selection-end="740" vertical-scroll-proportion="0.0" vertical-offset="234" max-vertical-offset="450">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainActivity.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/rhsr/src/main/java/com/rcompton/rhsr/MainActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="115" column="76" selection-start="4234" selection-end="4234" vertical-scroll-proportion="0.40074906" vertical-offset="1190" max-vertical-offset="8424">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GPSManager.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rhsr/src/main/java/com/rcompton/rhsr/location/GPSManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="67" selection-start="1206" selection-end="1206" vertical-scroll-proportion="0.0" vertical-offset="684" max-vertical-offset="1422">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rhsr/src/main/AndroidManifest.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="37" selection-start="1108" selection-end="1108" vertical-scroll-proportion="-20.16" vertical-offset="0" max-vertical-offset="1566">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RHSRBackendHandler.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rhsr/src/main/java/com/rcompton/rhsr/RHSRBackendHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="159" column="37" selection-start="5164" selection-end="5164" vertical-scroll-proportion="0.0" vertical-offset="2862" max-vertical-offset="3438">
+            <state line="28" column="0" selection-start="553" selection-end="553" vertical-scroll-proportion="0.0" vertical-offset="218" max-vertical-offset="792">
               <folding />
             </state>
           </provider>
@@ -525,6 +468,11 @@
                 <option name="name" value="preTestBuild" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Prepare com.android.support:appcompat-v7:18.0.0" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/rhsr" />
+                <option name="name" value="prepareComAndroidSupportAppcompatV71800Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/rhsr" />
                 <option name="name" value="prepareDebugDependencies" />
               </ExternalTaskPojo>
@@ -615,22 +563,23 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/rhsr/src/main/res/layout/take_and_save_photo_activity.xml" />
-        <option value="$PROJECT_DIR$/rhsr/src/main/res/drawable-hdpi/blackcurvebox.xml" />
-        <option value="$PROJECT_DIR$/rhsr/src/main/res/menu/tweet.xml" />
-        <option value="$PROJECT_DIR$/rhsr/src/main/res/menu/twitter_auth.xml" />
         <option value="$PROJECT_DIR$/rhsr/src/main/res/menu/tweet_to_twitter.xml" />
         <option value="$PROJECT_DIR$/rhsr/src/main/res/menu/twitter_oauth.xml" />
         <option value="$PROJECT_DIR$/rhsr/src/main/res/menu/main.xml" />
         <option value="$PROJECT_DIR$/rhsr/src/main/res/layout/activity_tweet.xml" />
         <option value="$PROJECT_DIR$/rhsr/src/main/java/com/rcompton/rhsr/RHSRBackendHandler.java" />
         <option value="$PROJECT_DIR$/rhsr/src/main/res/layout/activity_main.xml" />
-        <option value="$PROJECT_DIR$/rhsr/build.gradle" />
-        <option value="$PROJECT_DIR$/rhsr/src/main/java/com/rcompton/rhsr/MainActivity.java" />
-        <option value="$PROJECT_DIR$/rhsr/src/main/java/com/rcompton/rhsr/TweetActivity.java" />
         <option value="$PROJECT_DIR$/rhsr/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/rhsr/src/main/java/com/rcompton/rhsr/location/GPSManager.java" />
+        <option value="$PROJECT_DIR$/rhsr/src/main/java/com/rcompton/rhsr/TweetActivity.java" />
+        <option value="$PROJECT_DIR$/rhsr/src/main/java/com/rcompton/rhsr/backend/RHSRQuery.java" />
+        <option value="$PROJECT_DIR$/rhsr/src/main/java/com/rcompton/rhsr/backend/SubmittedReportMongoUploader.java" />
+        <option value="$PROJECT_DIR$/rhsr/src/main/java/com/rcompton/rhsr/backend/SubmittedReport.java" />
+        <option value="$PROJECT_DIR$/rhsr/src/main/java/com/rcompton/rhsr/backend/Location.java" />
+        <option value="$PROJECT_DIR$/rhsr/build.gradle" />
+        <option value="$PROJECT_DIR$/rhsr/src/main/java/com/rcompton/rhsr/MainActivity.java" />
         <option value="$PROJECT_DIR$/rhsr/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/rhsr/build.gradle.orig" />
       </list>
     </option>
   </component>
@@ -665,6 +614,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -711,13 +661,188 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rhsrProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rhsrProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rhsr" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rhsrProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rhsrProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rhsr" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rhsrProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rhsrProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rhsr" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rhsr" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rhsrProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rhsrProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rhsr" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rhsr" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="location" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rhsrProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rhsrProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rhsr" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rhsr" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rhsrProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rhsrProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rhsr" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="build" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -742,6 +867,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/rhsr/src/main/java/com/rcompton/rhsr/backend" />
       <recent name="$PROJECT_DIR$/rhsr/src/main/java/com/rcompton/rhsr" />
       <recent name="$PROJECT_DIR$/rhsr/libs" />
       <recent name="$PROJECT_DIR$/rhsr/src/main/libs" />
@@ -751,6 +877,15 @@
     </key>
   </component>
   <component name="RunManager" selected="Android Application.rhsr">
+    <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="file://$PROJECT_DIR$" />
+      <setting name="debug" value="false" />
+      <method />
+    </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
       <module name="" />
       <option name="TESTING_TYPE" value="0" />
@@ -779,19 +914,6 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -817,6 +939,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -858,6 +993,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <option name="MODE" value="default_activity" />
       <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
       <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
       <option name="USE_LAST_SELECTED_DEVICE" value="false" />
       <option name="PREFERRED_AVD" value="" />
@@ -876,6 +1012,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <option name="MODE" value="default_activity" />
       <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
       <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
       <option name="USE_LAST_SELECTED_DEVICE" value="false" />
       <option name="PREFERRED_AVD" value="" />
@@ -935,35 +1072,42 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="743" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952815" sideWeight="0.67336684" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32554257" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32554257" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.9599332" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32445922" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.95840263" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24961948" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24885845" sideWeight="0.04006678" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32554257" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32445922" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952815" sideWeight="0.67336684" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32888147" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USERS">
+      <collection />
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -972,59 +1116,161 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <MESSAGE value="update to include hashtag and mongo uploads&#10;# Please enter the commit message for your changes. Lines starting&#10;# with '#' will be ignored, and an empty message aborts the commit.&#10;# On branch master&#10;# Your branch is ahead of 'origin/master' by 1 commit.&#10;#&#10;# Changes to be committed:&#10;#   (use &quot;git reset HEAD &lt;file&gt;...&quot; to unstage)&#10;#&#10;#&#9;modified:   rhsrProject/.gradle/1.8/taskArtifacts/fileHashes.bin&#10;#&#9;modified:   rhsrProject/.gradle/1.8/taskArtifacts/fileSnapshots.bin&#10;#&#9;modified:   rhsrProject/.gradle/1.8/taskArtifacts/outputFileStates.bin&#10;#&#9;modified:   rhsrProject/.gradle/1.8/taskArtifacts/taskArtifacts.bin&#10;#&#9;modified:   rhsrProject/.idea/gradle.xml&#10;#&#9;modified:   rhsrProject/.idea/libraries/commons_io_1_3_2.xml&#10;#&#9;modified:   rhsrProject/.idea/libraries/commons_lang_2_6.xml&#10;#&#9;modified:   rhsrProject/.idea/libraries/twitter4j_core_3_0_3.xml&#10;#&#9;modified:   rhsrProject/.idea/misc.xml&#10;#&#9;modified:   rhsrProject/.idea/vcs.xml&#10;#&#9;modified:   rhsrProject/.idea/workspace.xml&#10;#&#9;modified:   rhsrProject/rhsr/build/incremental/mergeAssets/debug/merger.xml&#10;#&#9;modified:   rhsrProject/rhsr/build/incremental/mergeResources/debug/merger.xml&#10;#&#9;modified:   rhsrProject/rhsr/build/manifests/debug/AndroidManifest.xml&#10;#&#9;modified:   rhsrProject/rhsr/build/res/all/debug/drawable-hdpi/blackcurvebox.xml&#10;#&#9;modified:   rhsrProject/rhsr/build/res/all/debug/drawable-hdpi/curvebox.xml&#10;#&#9;modified:   rhsrProject/rhsr/build/res/all/debug/layout/activity_main.xml&#10;#&#9;modified:   rhsrProject/rhsr/build/res/all/debug/layout/activity_tweet.xml&#10;#&#9;modified:   rhsrProject/rhsr/build/res/all/debug/layout/activity_twitter_oauth.xml&#10;#&#9;modified:   rhsrProject/rhsr/build/res/all/debug/layout/photo_report_button_activity.xml&#10;#&#9;modified:   rhsrProject/rhsr/build/res/all/debug/layout/take_and_save_photo_activity.xml&#10;#&#9;modified:   rhsrProject/rhsr/build/res/all/debug/menu/main.xml&#10;#&#9;modified:   rhsrProject/rhsr/build/res/all/debug/menu/photo_report_button.xml&#10;#&#9;modified:   rhsrProject/rhsr/build/res/all/debug/menu/take_and_save_photo.xml&#10;#&#9;modified:   rhsrProject/rhsr/build/res/all/debug/menu/tweet.xml&#10;#&#9;modified:   rhsrProject/rhsr/build/res/all/debug/menu/tweet_to_twitter.xml&#10;#&#9;modified:   rhsrProject/rhsr/build/res/all/debug/menu/twitter_auth.xml&#10;#&#9;modified:   rhsrProject/rhsr/build/res/all/debug/menu/twitter_oauth.xml&#10;#&#9;modified:   rhsrProject/rhsr/build/res/all/debug/values-sw720dp-land/values.xml&#10;#&#9;modified:   rhsrProject/rhsr/build/res/all/debug/values-v11/values.xml&#10;#&#9;modified:   rhsrProject/rhsr/build/res/all/debug/values/values.xml&#10;#&#9;modified:   rhsrProject/rhsr/src/main/AndroidManifest.xml&#10;#&#10;# Untracked files:&#10;#   (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)&#10;#&#10;#&#9;rhsrProject/.idea/.name&#10;#&#9;rhsrProject/.idea/workspace.xml.orig&#10;#&#9;rhsrProject/gradlew&#10;#&#9;rhsrProject/gradlew.bat&#10;#&#9;rhsrProject/local.properties&#10;#&#9;rhsrProject/rhsr/assets/&#10;#&#9;rhsrProject/rhsr/build.gradle.orig&#10;#&#9;rhsrProject/rhsr/build/apk/&#10;#&#9;rhsrProject/rhsr/build/classes/&#10;#&#9;rhsrProject/rhsr/build/incremental/aidl/&#10;#&#9;rhsrProject/rhsr/build/incremental/dex/&#10;#&#9;rhsrProject/rhsr/build/incremental/mergeAssets/debug/inputs.data&#10;#&#9;rhsrProject/rhsr/build/incremental/mergeAssets/debug/outputs.data&#10;#&#9;rhsrProject/rhsr/build/incremental/mergeResources/debug/inputs.data&#10;#&#9;rhsrProject/rhsr/build/incremental/mergeResources/debug/outputs.data&#10;#&#9;rhsrProject/rhsr/build/libs/&#10;#&#9;rhsrProject/rhsr/build/res/all/debug/drawable-hdpi/icon.jpg&#10;#&#9;rhsrProject/rhsr/build/res/all/debug/drawable-hdpi/s13.jpg&#10;#&#9;rhsrProject/rhsr/build/res/all/debug/drawable-hdpi/s32.jpg&#10;#&#9;rhsrProject/rhsr/build/res/all/debug/drawable-hdpi/surfa4.jpg&#10;#&#9;rhsrProject/rhsr/build/res/all/debug/drawable-hdpi/surfgirl.jpg&#10;#&#9;rhsrProject/rhsr/build/res/all/debug/drawable-hdpi/surn12.jpg&#10;#&#9;rhsrProject/rhsr/libs/&#10;#&#9;rhsrProject/rhsr/rhsr.apk&#10;#&#9;rhsrProject/rhsr/rhsr.iml&#10;#&#9;rhsrProject/rhsr/rhsr.iml.orig&#10;#&#9;rhsrProject/rhsr/src/main/AndroidManifest.xml.orig&#10;#&#9;rhsrProject/rhsr/src/main/libs/&#10;#&#9;rhsrProject/rhsr/src/main/res/drawable-hdpi/icon.jpg&#10;#&#9;rhsrProject/rhsr/src/main/res/drawable-hdpi/s13.jpg&#10;#&#9;rhsrProject/rhsr/src/main/res/drawable-hdpi/s32.jpg&#10;#&#9;rhsrProject/rhsr/src/main/res/drawable-hdpi/surfa4.jpg&#10;#&#9;rhsrProject/rhsr/src/main/res/drawable-hdpi/surfgirl.jpg&#10;#&#9;rhsrProject/rhsr/src/main/res/drawable-hdpi/surn12.jpg&#10;#&#9;rhsrProject/rhsrProject.iml&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="update to include hashtag and mongo uploads&#10;# Please enter the commit message for your changes. Lines starting&#10;# with '#' will be ignored, and an empty message aborts the commit.&#10;# On branch master&#10;# Your branch is ahead of 'origin/master' by 1 commit.&#10;#&#10;# Changes to be committed:&#10;#   (use &quot;git reset HEAD &lt;file&gt;...&quot; to unstage)&#10;#&#10;#&#9;modified:   rhsrProject/.gradle/1.8/taskArtifacts/fileHashes.bin&#10;#&#9;modified:   rhsrProject/.gradle/1.8/taskArtifacts/fileSnapshots.bin&#10;#&#9;modified:   rhsrProject/.gradle/1.8/taskArtifacts/outputFileStates.bin&#10;#&#9;modified:   rhsrProject/.gradle/1.8/taskArtifacts/taskArtifacts.bin&#10;#&#9;modified:   rhsrProject/.idea/gradle.xml&#10;#&#9;modified:   rhsrProject/.idea/libraries/commons_io_1_3_2.xml&#10;#&#9;modified:   rhsrProject/.idea/libraries/commons_lang_2_6.xml&#10;#&#9;modified:   rhsrProject/.idea/libraries/twitter4j_core_3_0_3.xml&#10;#&#9;modified:   rhsrProject/.idea/misc.xml&#10;#&#9;modified:   rhsrProject/.idea/vcs.xml&#10;#&#9;modified:   rhsrProject/.idea/workspace.xml&#10;#&#9;modified:   rhsrProject/rhsr/build/incremental/mergeAssets/debug/merger.xml&#10;#&#9;modified:   rhsrProject/rhsr/build/incremental/mergeResources/debug/merger.xml&#10;#&#9;modified:   rhsrProject/rhsr/build/manifests/debug/AndroidManifest.xml&#10;#&#9;modified:   rhsrProject/rhsr/build/res/all/debug/drawable-hdpi/blackcurvebox.xml&#10;#&#9;modified:   rhsrProject/rhsr/build/res/all/debug/drawable-hdpi/curvebox.xml&#10;#&#9;modified:   rhsrProject/rhsr/build/res/all/debug/layout/activity_main.xml&#10;#&#9;modified:   rhsrProject/rhsr/build/res/all/debug/layout/activity_tweet.xml&#10;#&#9;modified:   rhsrProject/rhsr/build/res/all/debug/layout/activity_twitter_oauth.xml&#10;#&#9;modified:   rhsrProject/rhsr/build/res/all/debug/layout/photo_report_button_activity.xml&#10;#&#9;modified:   rhsrProject/rhsr/build/res/all/debug/layout/take_and_save_photo_activity.xml&#10;#&#9;modified:   rhsrProject/rhsr/build/res/all/debug/menu/main.xml&#10;#&#9;modified:   rhsrProject/rhsr/build/res/all/debug/menu/photo_report_button.xml&#10;#&#9;modified:   rhsrProject/rhsr/build/res/all/debug/menu/take_and_save_photo.xml&#10;#&#9;modified:   rhsrProject/rhsr/build/res/all/debug/menu/tweet.xml&#10;#&#9;modified:   rhsrProject/rhsr/build/res/all/debug/menu/tweet_to_twitter.xml&#10;#&#9;modified:   rhsrProject/rhsr/build/res/all/debug/menu/twitter_auth.xml&#10;#&#9;modified:   rhsrProject/rhsr/build/res/all/debug/menu/twitter_oauth.xml&#10;#&#9;modified:   rhsrProject/rhsr/build/res/all/debug/values-sw720dp-land/values.xml&#10;#&#9;modified:   rhsrProject/rhsr/build/res/all/debug/values-v11/values.xml&#10;#&#9;modified:   rhsrProject/rhsr/build/res/all/debug/values/values.xml&#10;#&#9;modified:   rhsrProject/rhsr/src/main/AndroidManifest.xml&#10;#&#10;# Untracked files:&#10;#   (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)&#10;#&#10;#&#9;rhsrProject/.idea/.name&#10;#&#9;rhsrProject/.idea/workspace.xml.orig&#10;#&#9;rhsrProject/gradlew&#10;#&#9;rhsrProject/gradlew.bat&#10;#&#9;rhsrProject/local.properties&#10;#&#9;rhsrProject/rhsr/assets/&#10;#&#9;rhsrProject/rhsr/build.gradle.orig&#10;#&#9;rhsrProject/rhsr/build/apk/&#10;#&#9;rhsrProject/rhsr/build/classes/&#10;#&#9;rhsrProject/rhsr/build/incremental/aidl/&#10;#&#9;rhsrProject/rhsr/build/incremental/dex/&#10;#&#9;rhsrProject/rhsr/build/incremental/mergeAssets/debug/inputs.data&#10;#&#9;rhsrProject/rhsr/build/incremental/mergeAssets/debug/outputs.data&#10;#&#9;rhsrProject/rhsr/build/incremental/mergeResources/debug/inputs.data&#10;#&#9;rhsrProject/rhsr/build/incremental/mergeResources/debug/outputs.data&#10;#&#9;rhsrProject/rhsr/build/libs/&#10;#&#9;rhsrProject/rhsr/build/res/all/debug/drawable-hdpi/icon.jpg&#10;#&#9;rhsrProject/rhsr/build/res/all/debug/drawable-hdpi/s13.jpg&#10;#&#9;rhsrProject/rhsr/build/res/all/debug/drawable-hdpi/s32.jpg&#10;#&#9;rhsrProject/rhsr/build/res/all/debug/drawable-hdpi/surfa4.jpg&#10;#&#9;rhsrProject/rhsr/build/res/all/debug/drawable-hdpi/surfgirl.jpg&#10;#&#9;rhsrProject/rhsr/build/res/all/debug/drawable-hdpi/surn12.jpg&#10;#&#9;rhsrProject/rhsr/libs/&#10;#&#9;rhsrProject/rhsr/rhsr.apk&#10;#&#9;rhsrProject/rhsr/rhsr.iml&#10;#&#9;rhsrProject/rhsr/rhsr.iml.orig&#10;#&#9;rhsrProject/rhsr/src/main/AndroidManifest.xml.orig&#10;#&#9;rhsrProject/rhsr/src/main/libs/&#10;#&#9;rhsrProject/rhsr/src/main/res/drawable-hdpi/icon.jpg&#10;#&#9;rhsrProject/rhsr/src/main/res/drawable-hdpi/s13.jpg&#10;#&#9;rhsrProject/rhsr/src/main/res/drawable-hdpi/s32.jpg&#10;#&#9;rhsrProject/rhsr/src/main/res/drawable-hdpi/surfa4.jpg&#10;#&#9;rhsrProject/rhsr/src/main/res/drawable-hdpi/surfgirl.jpg&#10;#&#9;rhsrProject/rhsr/src/main/res/drawable-hdpi/surn12.jpg&#10;#&#9;rhsrProject/rhsrProject.iml&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/rhsr/src/main/res/layout/photo_report_button_activity.xml">
+    <entry file="file://$PROJECT_DIR$/rhsr/src/main/java/com/rcompton/rhsr/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="534" selection-end="534" vertical-scroll-proportion="-6.923077" vertical-offset="0" max-vertical-offset="1044">
+        <state line="280" column="0" selection-start="9495" selection-end="9495" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="9216">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rhsr/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1566">
           <folding>
-            <element signature="e#231#266#0" expanded="false" />
-            <element signature="e#292#327#0" expanded="false" />
-            <element signature="e#351#384#0" expanded="false" />
-            <element signature="e#411#444#0" expanded="false" />
+            <element signature="e#1167#1185#0" expanded="true" />
           </folding>
         </state>
       </provider>
-      <provider editor-type-id="android-designer">
-        <state />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rhsr/src/main/java/com/rcompton/rhsr/PhotoReportButtonActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="336" column="70" selection-start="12426" selection-end="12533" vertical-scroll-proportion="0.0" vertical-offset="6048" max-vertical-offset="9648">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rhsr/src/main/res/layout/take_and_save_photo_activity.xml">
+    <entry file="file://$PROJECT_DIR$/rhsr/src/main/java/com/rcompton/rhsr/TakeAndSavePhotoActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="533" selection-end="533" vertical-scroll-proportion="-6.923077" vertical-offset="0" max-vertical-offset="450">
+        <state line="14" column="13" selection-start="377" selection-end="377" vertical-scroll-proportion="0.0" vertical-offset="252" max-vertical-offset="1674">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rhsr/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="0" selection-start="553" selection-end="553" vertical-scroll-proportion="0.0" vertical-offset="220" max-vertical-offset="792">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rhsr/src/main/java/com/rcompton/rhsr/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="280" column="0" selection-start="9495" selection-end="9495" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="9216">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rhsr/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1566">
           <folding>
-            <element signature="e#231#266#0" expanded="false" />
-            <element signature="e#292#327#0" expanded="false" />
-            <element signature="e#351#384#0" expanded="false" />
-            <element signature="e#411#444#0" expanded="false" />
-            <element signature="e#665#686#0" expanded="false" />
+            <element signature="e#1167#1185#0" expanded="true" />
           </folding>
         </state>
       </provider>
-      <provider editor-type-id="android-designer">
-        <state />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rhsr/src/main/java/com/rcompton/rhsr/PhotoReportButtonActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="336" column="70" selection-start="12426" selection-end="12533" vertical-scroll-proportion="0.0" vertical-offset="6048" max-vertical-offset="9648">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rhsr/src/main/res/drawable-hdpi/blackcurvebox.xml">
+    <entry file="file://$PROJECT_DIR$/rhsr/src/main/java/com/rcompton/rhsr/TakeAndSavePhotoActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="34" selection-start="140" selection-end="140" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="414" />
+        <state line="14" column="13" selection-start="377" selection-end="377" vertical-scroll-proportion="0.0" vertical-offset="252" max-vertical-offset="1674">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rhsr/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="0" selection-start="553" selection-end="553" vertical-scroll-proportion="0.0" vertical-offset="220" max-vertical-offset="792">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rhsr/src/main/java/com/rcompton/rhsr/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="280" column="0" selection-start="9495" selection-end="9495" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="9216">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rhsr/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1566">
+          <folding>
+            <element signature="e#1167#1185#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rhsr/src/main/java/com/rcompton/rhsr/PhotoReportButtonActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="336" column="70" selection-start="12426" selection-end="12533" vertical-scroll-proportion="0.0" vertical-offset="6048" max-vertical-offset="9648">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rhsr/src/main/java/com/rcompton/rhsr/TakeAndSavePhotoActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="13" selection-start="377" selection-end="377" vertical-scroll-proportion="0.0" vertical-offset="252" max-vertical-offset="1674">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rhsr/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="0" selection-start="553" selection-end="553" vertical-scroll-proportion="0.0" vertical-offset="220" max-vertical-offset="792">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rhsr/src/main/java/com/rcompton/rhsr/TweetActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="225" column="60" selection-start="8709" selection-end="8709" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4644">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rhsr/src/main/java/com/rcompton/rhsr/backend/RHSRQuery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="0" selection-start="607" selection-end="607" vertical-scroll-proportion="0.0" vertical-offset="378" max-vertical-offset="522" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rhsr/src/main/java/com/rcompton/rhsr/backend/SubmittedReport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="13" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="1944" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rhsr/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="0" selection-start="553" selection-end="553" vertical-scroll-proportion="0.0" vertical-offset="220" max-vertical-offset="792">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rhsr/src/main/java/com/rcompton/rhsr/backend/Location.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="117" column="9" selection-start="2763" selection-end="2767" vertical-scroll-proportion="0.0" vertical-offset="2088" max-vertical-offset="2160" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/rhsr/src/main/res/menu/main.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="33" selection-start="409" selection-end="409" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="378">
-          <folding />
-        </state>
+        <state line="9" column="33" selection-start="409" selection-end="409" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="378" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/rhsr/src/main/res/layout/activity_twitter_oauth.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="546">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="546" />
       </provider>
       <provider editor-type-id="android-designer">
         <state />
@@ -1032,9 +1278,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/rhsr/src/main/java/com/rcompton/rhsr/RHSRBackendHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="159" column="37" selection-start="5164" selection-end="5164" vertical-scroll-proportion="0.0" vertical-offset="1275" max-vertical-offset="3294">
-          <folding />
-        </state>
+        <state line="159" column="37" selection-start="5164" selection-end="5164" vertical-scroll-proportion="0.0" vertical-offset="1275" max-vertical-offset="3294" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
@@ -1042,25 +1286,9 @@
         <state line="1" column="0" selection-start="100" selection-end="100" vertical-scroll-proportion="0.04774536" vertical-offset="0" max-vertical-offset="377" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rhsr/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="0" selection-start="448" selection-end="448" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rhsr/src/main/java/com/rcompton/rhsr/TweetActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="177" column="14" selection-start="6332" selection-end="6332" vertical-scroll-proportion="0.0" vertical-offset="324" max-vertical-offset="9234">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/rhsr/src/main/res/layout/activity_tweet.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="31" selection-start="1892" selection-end="1892" vertical-scroll-proportion="0.0" vertical-offset="900" max-vertical-offset="1926">
-          <folding />
-        </state>
+        <state line="50" column="31" selection-start="1892" selection-end="1892" vertical-scroll-proportion="0.0" vertical-offset="900" max-vertical-offset="1926" />
       </provider>
       <provider editor-type-id="android-designer">
         <state />
@@ -1068,35 +1296,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/rhsr/src/main/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="34" selection-start="740" selection-end="740" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
-          <folding />
-        </state>
+        <state line="13" column="34" selection-start="740" selection-end="740" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/local.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="34" selection-start="424" selection-end="424" vertical-scroll-proportion="0.28321677" vertical-offset="0" max-vertical-offset="572">
-          <folding />
-        </state>
+        <state line="9" column="34" selection-start="424" selection-end="424" vertical-scroll-proportion="0.28321677" vertical-offset="0" max-vertical-offset="572" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/rhsr/src/main/java/com/rcompton/rhsr/location/GPSManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="67" selection-start="1206" selection-end="1206" vertical-scroll-proportion="0.0" vertical-offset="684" max-vertical-offset="1422">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rhsr/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="37" selection-start="1108" selection-end="1108" vertical-scroll-proportion="-20.16" vertical-offset="0" max-vertical-offset="1566">
-          <folding />
-        </state>
+        <state line="38" column="67" selection-start="1206" selection-end="1206" vertical-scroll-proportion="0.0" vertical-offset="684" max-vertical-offset="1422" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/rhsr/src/main/res/layout/activity_main.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="107" column="39" selection-start="4065" selection-end="4065" vertical-scroll-proportion="0.0" vertical-offset="1704" max-vertical-offset="2250">
+        <state line="68" column="43" selection-start="2570" selection-end="2570" vertical-scroll-proportion="0.8021978" vertical-offset="786" max-vertical-offset="2250">
           <folding />
         </state>
       </provider>
@@ -1104,10 +1319,69 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/rhsr/src/main/java/com/rcompton/rhsr/backend/RHSRQuery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="0" selection-start="607" selection-end="607" vertical-scroll-proportion="0.5034965" vertical-offset="0" max-vertical-offset="572" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rhsr/src/main/java/com/rcompton/rhsr/backend/SubmittedReport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="13" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0" vertical-offset="1" max-vertical-offset="1944" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rhsr/src/main/java/com/rcompton/rhsr/backend/Location.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="103" column="23" selection-start="2480" selection-end="2480" vertical-scroll-proportion="0.21678321" vertical-offset="1586" max-vertical-offset="2160" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rhsr/src/main/java/com/rcompton/rhsr/TakeAndSavePhotoActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="13" selection-start="377" selection-end="377" vertical-scroll-proportion="-0.31358886" vertical-offset="252" max-vertical-offset="1494">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rhsr/src/main/java/com/rcompton/rhsr/PhotoReportButtonActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="336" column="70" selection-start="12426" selection-end="12533" vertical-scroll-proportion="-1.5401069" vertical-offset="6048" max-vertical-offset="8730">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rhsr/src/main/java/com/rcompton/rhsr/TweetActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="225" column="60" selection-start="8709" selection-end="8709" vertical-scroll-proportion="0.0" vertical-offset="3096" max-vertical-offset="4122">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/rhsr/src/main/java/com/rcompton/rhsr/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="115" column="76" selection-start="4234" selection-end="4234" vertical-scroll-proportion="0.40074906" vertical-offset="1190" max-vertical-offset="8424">
+        <state line="341" column="0" selection-start="12223" selection-end="12223" vertical-scroll-proportion="0.0" vertical-offset="5613" max-vertical-offset="8460">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rhsr/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="0" selection-start="553" selection-end="553" vertical-scroll-proportion="0.0" vertical-offset="218" max-vertical-offset="792">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rhsr/build.gradle.orig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="24" selection-start="577" selection-end="577" vertical-scroll-proportion="0.5609756" vertical-offset="128" max-vertical-offset="702">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rhsr/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="28" selection-start="196" selection-end="196" vertical-scroll-proportion="-0.815331" vertical-offset="540" max-vertical-offset="1584">
+          <folding>
+            <element signature="e#1167#1185#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
