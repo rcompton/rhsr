@@ -1,13 +1,9 @@
 package com.rcompton.rhsr;
 
 import android.app.Activity;
-import android.app.ProgressDialog;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import twitter4j.Twitter;
@@ -81,19 +77,16 @@ public class TwitterOAuthActivity extends Activity implements TwitterOAuthView.L
         Log.i("Twitter OAuth Token", "> " + accessToken.getToken() + "\n" + e.toString());
     }
 
-
     public void onFailure(TwitterOAuthView view, TwitterOAuthView.Result result)
     {
         // Failed to get an access token.
         showMessage("Failed due to " + result);
     }
 
-
     private void showMessage(String message)
     {
         // Show a popup message.
         Toast.makeText(this, message, Toast.LENGTH_LONG).show();
     }
-
 
 }

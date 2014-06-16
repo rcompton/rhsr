@@ -152,7 +152,9 @@ public class TweetActivity extends Activity{
      * */
     private boolean isTwitterLoggedInAlready() {
         // return twitter login status from Shared Preferences
+        Log.i(LOG_TAG, MyConstants.PREF_KEY_TWITTER_LOGIN);
         return mSharedPreferences.getBoolean(MyConstants.PREF_KEY_TWITTER_LOGIN, false);
+
     }
 
     private void showMessage(String message) {
