@@ -16,11 +16,9 @@ public class MyConstants {
 
     public static final String PREF_USERNAME = "rhsrUserName";
 
-
     public static final String TWITTER_CALLBACK_URL = "http://www.rcompton.org";
 
     public static final String PREFSNAME = "rhsrPrefs";
-
 
     public static final String URL_TWITTER_AUTH = "auth_url";
     public static final String URL_TWITTER_OAUTH_VERIFIER = "oauth_verifier";

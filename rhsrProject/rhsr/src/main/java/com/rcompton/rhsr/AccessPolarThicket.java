@@ -10,8 +10,6 @@ import java.net.URL;
 
 class AccessPolarThicket extends AsyncTask<String, Void, String> {
 
-
-
     @Override
     protected String doInBackground(String[] urlIn) {
         try {

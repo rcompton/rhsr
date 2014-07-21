@@ -17,8 +17,10 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.provider.MediaStore;
 import android.text.Html;
+import android.text.SpannableString;
 import android.text.method.LinkMovementMethod;
 import android.text.method.ScrollingMovementMethod;
+import android.text.util.Linkify;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.Menu;
@@ -34,10 +36,17 @@ import com.rcompton.rhsr.backend.RHSRQuery;
 import com.rcompton.rhsr.location.GPSManager;
 import com.rcompton.rhsr.location.LocationHelper;
 
+import org.joda.time.DateTime;
+
 import java.io.File;
 import java.util.Calendar;
 import java.util.Random;
-import java.util.UUID;
+
+import twitter4j.StatusUpdate;
+import twitter4j.Twitter;
+import twitter4j.TwitterFactory;
+import twitter4j.auth.AccessToken;
+import twitter4j.conf.ConfigurationBuilder;
 
 public class MainActivity extends Activity {
 
@@ -62,8 +71,10 @@ public class MainActivity extends Activity {
 
     private Uri imageUri;
     private boolean tookPhoto = false;
-    private static final int PIC_TWITTER_LINK_CHARS = 20;
+    private static final int PIC_TWITTER_LINK_CHARS = 20; //http://goo.gl/zjvk12
     private String buoyDisplayStr;
+    private SharedPreferences mSharedPreferences;
+    private boolean tweeted;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -72,6 +83,11 @@ public class MainActivity extends Activity {
         Log.i(RHSR_MAIN_LOG_TAG, "Oncreate lng " + usersLng);
 
         setupUI();
+
+        mSharedPreferences = getApplicationContext().getSharedPreferences(MyConstants.PREFSNAME, 0);
+        Log.i(RHSR_MAIN_LOG_TAG, mSharedPreferences.getAll().toString());
+
+        tweeted = false;
 
         GPSManager gpsManager = new GPSManager(MainActivity.this);
         gpsManager.start();
@@ -172,8 +188,6 @@ public class MainActivity extends Activity {
             buoyDisplayText.setMovementMethod(new ScrollingMovementMethod());
             buoyDisplayText.setText(buoyDisplayStr);
         }
-
-
     }
 
     @Override
@@ -240,10 +254,9 @@ public class MainActivity extends Activity {
     }
 
     /** Called when the user clicks the Photo Report button */
-    public void photoReportButton(View view) {
+    public void addPhotoButton(View view) {
         capturePhoto();
     }
-
 
 
     /** Called when the user clicks the Tweet button */
@@ -251,12 +264,14 @@ public class MainActivity extends Activity {
         EditText editText = (EditText) findViewById(R.id.editText0);
         String submittedReport = editText.getText().toString();
 
-        if(submittedReport.length()+PIC_TWITTER_LINK_CHARS > 140){
+        Log.i(RHSR_MAIN_LOG_TAG, "submittedReport length (must be under 120): "+submittedReport.length());
+
+        if((submittedReport.length()+PIC_TWITTER_LINK_CHARS) > 140){
             AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
             alertDialogBuilder.setMessage("Max characters allowed for Twitter: 140 \n" +
-                    "Your report: "+submittedReport.length()+PIC_TWITTER_LINK_CHARS)
+                    "Your report: "+(submittedReport.length()+PIC_TWITTER_LINK_CHARS))
                     .setCancelable(false)
-                    .setPositiveButton("OK",new DialogInterface.OnClickListener() {
+                    .setPositiveButton("Edit", new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int id) {
                             dialog.cancel();
                         }
@@ -269,15 +284,61 @@ public class MainActivity extends Activity {
             wmlp.y = 100;   //y position
             alertDialog.show();
         }else{
-
-            Intent intent = new Intent(this, TweetActivity.class);
-            intent.putExtra(SUBMITTED_REPORT_MESSAGE, submittedReport);
-            if(tookPhoto)
-                intent.putExtra(SUBMITTED_REPORT_PHOTO, imageUri.getPath());
-            startActivity(intent);
+              sendTweet(submittedReport);
+//            Intent intent = new Intent(this, TweetActivity.class);
+//            intent.putExtra(SUBMITTED_REPORT_MESSAGE, submittedReport);
+//            if(tookPhoto)
+//                intent.putExtra(SUBMITTED_REPORT_PHOTO, imageUri.getPath());
+//            startActivity(intent);
         }
     }
 
+
+    private void sendTweet(String tweetText){
+        Log.i(RHSR_MAIN_LOG_TAG, tweetText);
+        ConnectionDetector connectionDetector = new ConnectionDetector(this.getApplicationContext());
+        if(connectionDetector.isConnectingToInternet()){
+            if(isTwitterLoggedInAlready()){
+                if(!tweeted){
+                    showMessage("logged in as "+ mSharedPreferences.getString(MyConstants.PREF_USERNAME,""));
+                    UpdateTwitterStatus updateTwitterStatus = new UpdateTwitterStatus();
+                    updateTwitterStatus.setTweetText(tweetText);
+                    updateTwitterStatus.setTweetPhoto(imageUri);
+                    updateTwitterStatus.execute();
+                }
+            }else{
+                Intent intent = new Intent(this, TwitterOAuthActivity.class);
+                startActivity(intent);
+            }
+        }else{
+            AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
+            alertDialogBuilder.setMessage("No network connection...");
+            AlertDialog alertDialog = alertDialogBuilder.create();
+            alertDialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+            WindowManager.LayoutParams wmlp = alertDialog.getWindow().getAttributes();
+            wmlp.gravity = Gravity.TOP | Gravity.LEFT;
+            wmlp.x = 100;   //x position
+            wmlp.y = 100;   //y position
+            alertDialog.show();
+        }
+    }
+
+
+    /**
+     * Check user already logged in your application using twitter Login flag is
+     * fetched from Shared Preferences
+     * */
+    private boolean isTwitterLoggedInAlready() {
+        // return twitter login status from Shared Preferences
+        Log.i(RHSR_MAIN_LOG_TAG, MyConstants.PREF_KEY_TWITTER_LOGIN);
+        return mSharedPreferences.getBoolean(MyConstants.PREF_KEY_TWITTER_LOGIN, false);
+
+    }
+
+    private void showMessage(String message) {
+        // Show a popup message.
+        Toast.makeText(this, message, Toast.LENGTH_LONG).show();
+    }
 
     /**
      * connect to my api
@@ -307,21 +368,20 @@ public class MainActivity extends Activity {
         /** parse the heroku response **/
         try{
 
-            if(rhsr.kmToClosestSpot() > 2.0){
+            if(rhsr.kmToClosestSpot() > 3.0){
                 tweetDefault = "no known spots within "+rhsr.kmToClosestSpot()+"km\n" +
                         "swell: "+rhsr.getSwellInfo() + "\n" +
                         "wind: "+rhsr.getWindInfo().split("Gust")[0].replace("From the","") + "\n" +
                         "tide: "+rhsr.getTideInfo() + "\n" +
-                        "water temp: "+rhsr.getClosestBuoyTemp();
-                tweetDefault = tweetDefault+" "+tweetDefault.length() +"\n"+
-                        " #rhsr";
+                        "water: "+rhsr.getClosestBuoyTemp()+"\n"+
+                        " http://goo.gl/zjvk12";
             }else{
                 tweetDefault = rhsr.getClosestSpotsAndDistances().get(0).split("\t")[0] + "\n"+
                         "swell: "+rhsr.getSwellInfo() + "\n" +
                         "wind: "+rhsr.getWindInfo().split("Gust")[0].replace("From the","") + "\n" +
                         "tide: "+rhsr.getTideInfo() + "\n" +
-                        "water temp: "+rhsr.getClosestBuoyTemp() +"\n"+
-                " #rhsr";
+                        "water: "+rhsr.getClosestBuoyTemp()+"\n"+
+                        " http://goo.gl/zjvk12";
             }
 
             //closest known spots and descriptions appear below
@@ -454,9 +514,10 @@ public class MainActivity extends Activity {
 
     //start camera
     public void capturePhoto() {
+        String fname = android.os.Environment.DIRECTORY_DCIM + "rhsrPhoto"+ new DateTime() +".jpg";
         Intent intent = new Intent("android.media.action.IMAGE_CAPTURE");
-        File photoFile = new File(Environment.getExternalStorageDirectory().getAbsolutePath(),
-                "rhsrPhoto"+ UUID.randomUUID().toString()+".jpg");
+        File photoFile = new File(Environment.getExternalStorageDirectory().getAbsolutePath(), fname
+                );
         intent.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(photoFile));
         imageUri = Uri.fromFile(photoFile);
         startActivityForResult(intent, CAMERA_REQ_CODE);
@@ -475,14 +536,6 @@ public class MainActivity extends Activity {
                     Log.i(RHSR_MAIN_LOG_TAG, "call onResume after photo taken");
                     onResume();
 
-                    //Bitmap smallImage = (Bitmap) data.getExtras().get("data");
-                    //this.imageView.setImageBitmap(smallImage);
-                    //Toast.makeText(getApplicationContext(),"ok"+imageUri.toString(),Toast.LENGTH_SHORT);
-                    //Uri selectedImageUri = imageUri;
-                    //boolean tweetSuccess = sendTweetToRyansAccount(tweetText,selectedImageUri);
-                    //if(tweetSuccess){
-                    //    Log.i(PBUTTON_LOG_TAG, "tweet with photo success!!!!!!!");
-                    //}
                 }else{
                     Log.i(RHSR_MAIN_LOG_TAG,"photo fail!");
                 }
@@ -491,7 +544,6 @@ public class MainActivity extends Activity {
         return;
 
     }
-
 
     public void clearSharedPrefs(MenuItem mview){
         SharedPreferences mSharedPreferences = getApplicationContext().getSharedPreferences(MyConstants.PREFSNAME, 0);
@@ -504,5 +556,142 @@ public class MainActivity extends Activity {
         editor.commit();
         Toast.makeText(this, "logged out of Twitter", Toast.LENGTH_LONG).show();
     }
+
+
+    /**
+     * Class to update status
+     **/
+    class UpdateTwitterStatus extends AsyncTask<String, String, String> {
+
+        ProgressDialog pDialog;
+        private String tweetLink;
+        private String tweetText;
+        private Uri tweetPhoto;
+
+        /**
+         * Before starting background thread Show Progress Dialog
+         * */
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+            pDialog = new ProgressDialog(MainActivity.this);
+            pDialog.setMessage("Posting to Twitter...");
+            //pDialog.setIndeterminate(false);
+            pDialog.setCancelable(false);
+            Window window = pDialog.getWindow();
+            WindowManager.LayoutParams wlp = window.getAttributes();
+            wlp.gravity = Gravity.TOP;
+            wlp.alpha = 1;
+            wlp.screenBrightness = 1;
+            wlp.flags &= ~WindowManager.LayoutParams.FLAG_DIM_BEHIND;
+            window.setAttributes(wlp);
+            pDialog.show();
+        }
+
+        /**
+         * getting Places JSON
+         * */
+        protected String doInBackground(String... args) {
+            // Log.d("Tweet Text", "> " + args[0]);
+            //String status = args[0]; //use global tweetText
+            try {
+                Long t = Calendar.getInstance().getTimeInMillis();
+                Long MAX_WAIT_MILLIS = 135000L;
+                while (!tweeted && Calendar.getInstance().getTimeInMillis() - t < MAX_WAIT_MILLIS) {
+
+                    ConfigurationBuilder builder = new ConfigurationBuilder();
+                    builder.setOAuthConsumerKey(MyConstants.TWITTER_CONSUMER_KEY);
+                    builder.setOAuthConsumerSecret(MyConstants.TWITTER_CONSUMER_SECRET);
+
+                    // Access Token
+                    String access_token = mSharedPreferences.getString(MyConstants.PREF_KEY_OAUTH_TOKEN, "");
+                    // Access Token Secret
+                    String access_token_secret = mSharedPreferences.getString(MyConstants.PREF_KEY_OAUTH_SECRET, "");
+
+                    AccessToken accessToken = new AccessToken(access_token, access_token_secret);
+                    Twitter twitter = new TwitterFactory(builder.build()).getInstance(accessToken);
+
+                    // Update status
+                    StatusUpdate statusUpdate = null;
+
+                    statusUpdate = new StatusUpdate(tweetText);
+                    if(tookPhoto) {
+                        File photoFile = new File(tweetPhoto.getPath());
+                        statusUpdate.setMedia(photoFile);
+                    }
+                    twitter4j.Status postedResponse = twitter.updateStatus(statusUpdate);
+
+                    Log.i(RHSR_MAIN_LOG_TAG, "success! "+postedResponse.getText());
+                    tweetLink = "https://twitter.com/"+postedResponse.getId()+"/status/"+ postedResponse.getId();
+                    Log.i(RHSR_MAIN_LOG_TAG, "> " + tweetLink);
+                    tweeted = true;
+
+                    Log.i(RHSR_MAIN_LOG_TAG, "now big bro report it");
+                }
+
+            } catch (Exception e) {
+                // Error in updating status
+                Log.d(RHSR_MAIN_LOG_TAG,"twitter error async",e);
+            }
+            return null;
+        }
+
+        /**
+         * After completing background task Dismiss the progress dialog and show
+         * the data in UI Always use runOnUiThread(new Runnable()) to update UI
+         * from background thread, otherwise you will get error
+         * **/
+        protected void onPostExecute(String file_url) {
+            // dismiss the dialog after getting all products
+            pDialog.dismiss();
+            tweeted = true;
+
+
+            // Linkify the message
+            final SpannableString alertLink = new SpannableString(tweetLink);
+            Linkify.addLinks(alertLink, Linkify.ALL);
+
+            //bring up a dialog
+            AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(MainActivity.this);
+            alertDialogBuilder.setMessage(alertLink)
+                    .setCancelable(false)
+                    .setPositiveButton("OK",new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int id) {
+                            dialog.cancel();
+                        }
+                    });
+            AlertDialog alertDialog = alertDialogBuilder.create();
+            alertDialog.show();
+            ((TextView)alertDialog.findViewById(android.R.id.message))
+                                  .setMovementMethod(LinkMovementMethod.getInstance());
+
+            Log.i(RHSR_MAIN_LOG_TAG,"tweeted!");
+        }
+
+        public String getTweetLink() {
+            return tweetLink;
+        }
+
+        public void setTweetLink(String tweetLink) {
+            this.tweetLink = tweetLink;
+        }
+
+        public String getTweetText() {
+            return tweetText;
+        }
+
+        public void setTweetText(String tweetText) {
+            this.tweetText = tweetText;
+        }
+
+        public Uri getTweetPhoto() {
+            return tweetPhoto;
+        }
+
+        public void setTweetPhoto(Uri tweetPhoto) {
+            this.tweetPhoto = tweetPhoto;
+        }
+    }
+
 
 }
